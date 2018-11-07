@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F0F0F0
+}
+
+#menus {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.menuL {
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #E8474A;
+    height: 75px;
+    width: 75px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    z-index: 20;
+}
+
+
+/*
+.menuLa{
+    display: block;
+    position: absolute;
+    background-color: #E8474A;
+   height: 75px;
+    width: 75px;
+    z-index: 20; 
+}
+*/
+
+.menuR {
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    background-color: #E8474A;
+    height: 75px;
+    width: 75px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#info {
+    position: absolute;
+    margin: 7px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url(../images/info.svg);
+    z-index: 27;
+}
+
+#lesson {
+    position: absolute;
+    margin: 7px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    right: 0;
+    background-image: url(../images/lesson.svg);
+    z-index: 4;
+}
+
+
+/* OPEN
+margin: -320px -300px;
+    height: 1100px;
+    width: 1100px;
+
+CLOSED
+    margin: -70px;
+    height: 150px;
+    width: 150px;
+*/
+
+#stage {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+#timebar {
+    display: block;
+    background-color: #6CE48F;
+    height: 5%;
+    width: 75vw;
+    margin: 0 auto 10vh auto;
+}
+
+#infotext {
+    display: block;
+    position: absolute;
+    height: 250px;
+    width: 600px;
+    color: white;
+    font-family: "Ovo", serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin: 20px 0 0 20px;
+    z-index: 22;
+}
+
+#aspan {
+    text-align: center;
+    font-size: 1em;
+}
+
+#infotext p {
+    text-align: left;
+    font-size: 1.1em;
+    width: 80%
+}
+
+#infotext h1 {
+    font-family: "Muli", sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: left
+}
+
+#lessontext {
+    display: block;
+    position: absolute;
+    height: 600px;
+    width: 500px;
+    color: white;
+    right: 0;
+    font-family: "Ovo", serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin: 20px 20px 0 0;
+    z-index: 5
+}
+
+#lessontext h1 {
+    font-family: "Muli", sans-serif;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: right
+}
+
+#lintro {
+    font-size: 1em
+}
+
+#pron {
+    font-size: .75em;
+    padding: .75em 0 0 0;
+}
+
+#lessontext p {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: .95em;
+    width: 260px;
+    right: 0;
+    margin: 25px 45% ;
+}
+
+#explain {
+    font-size: .6em;
+    font-style: italic;
+}
+
+#infoimg {
+    display: block;
+    position: absolute;
+    height: 350px;
+    width: 600px;
+    margin: 250px 0 0 0;
+    background-image: url(../images/gameexample.svg);
+    z-index: 24;
+}
+
+#infohand {
+    display: block;
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    margin: 390px 0 0 40px;
+    background-image: url(../images/hand.svg);
+    z-index: 25;
+    animation: hand 1s infinite;
+}
+
+@keyframes hand {
+    0% {
+        margin: 390px 0 0 40px;
+    }
+    50% {
+        margin: 420px 0 0 40px;
+    }
+    100% {
+        margin: 390px 0 0 40px;
+    }
+}
+
+#ix,
+#lx {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 0;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: "muli", sans-serif;
+    font-size: 1.7em;
+}
+
+#ix {
+    left: 0;
+    margin: 20px 0 0 620px;
+    z-index: 26;
+}
+
+#lx {
+    right: 0;
+    margin: 20px 620px 0 0;
+    z-index: 15;
+}
+
+#alerts {
+    display: block;
+    width: 99%;
+    height: 99%;
+    position: absolute;
+}
+
+#ready,
+#gameover,
+#win {
+    margin: auto;
+    margin-top: 50vh;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    font-family: "Muli", sans-serif;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#win {
+    font-size: .8em;
+    height: 120px;
+    line-height: 1.35em;
+    font-style: italic;
+}
+
+#win h1 {
+    font-style: normal;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+#win span {
+    font-style: normal;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#ready p {
+    padding: 10% 0;
+}
+
+#gameover p {
+    padding: 10% 0;
+}
+
+#gameover span {
+    font-size: .8em;
+}
+
+#actor {
+    padding: 65vh 0 0 0;
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all 0.3 ease;
+}
+
+#lives,
+#score {
+    display: block;
+    width: 50%;
+    padding: 2vh 0 0 0;
+    height: 5vh;
+    float: left;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: "Muli", 'Noto Sans JP', sans-serif;
+}
+
+#lives {
+    text-align: right;
+}
+
+@media only screen and (max-width:700px) {}

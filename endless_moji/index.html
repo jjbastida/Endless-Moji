@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Moji</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:600,800|Ovo" rel="stylesheet"> </head>
+
+<body>
+    <div id="menus">
+        <div id="menuleft" class="menuL">
+            <div id="help">
+                <div id="infohand"></div>
+                <div id="infoimg"></div>
+            </div>
+            <div id="ix">x</div>
+            <div id="infotext">
+                <h1>Endless Moji</h1><span id="aspan">Is a Japanese learning tool game designed to help users learn to read and differentiate between the first few japanese characters. It will be focusing primarily on the first group of Hiragana (the primary phonetic alphabet used in Japanese).</span>
+                <br>
+                <br>
+                <p>The game is played by simply pressing the letter on your keyboard that corresponds to the letter on screen before the timer runs out. If the timer runs out you lose one of your three lives. If you lose your three lives, it's game over.</p>
+                </div>
+            <div id="info">
+            </div>
+        </div>
+        <div id="menuright" class="menuR">
+            <div id="lx">x</div>
+            <div id="lessontext">
+                <h1>Lesson 1</h1><span id="lintro">The first lesson will be the first group of Hiragana. It is the core vowel group and the base for most languages.</span>
+                <p>あ - A <span id="pron">(Ah)</span> <span id="explain"><br>If you turn the symbol around the middle part resembles an uppercase A.. sorta...</span>
+                    <br>
+                    <br> い - I <span id="pron">(ee)</span><span id="explain"><br>In a way an I is just a straight line so this is just two.. two vertical lines </span>
+                    <br>
+                    <br>う - U <span id="pron">(ooh)</span><span id="explain"><br>Woah! It's just a U on it's side!</span>
+                    <br>
+                    <br>え - E <span id="pron">(eh)</span><span id="explain"><br>This one's kinda tricky.. Imagine it as a lowercase e and follow the lines and curves  of the overall shape.</span>
+                    <br>
+                    <br>お - O <span id="pron">(oh)</span><span id="explain"><br>That bottom part is round...ish..</span></p>
+            </div>
+            <div id="lesson"></div>
+        </div>
+    </div>
+    <div id="stage">
+        <div id="timebar"> </div>
+        <div id="actor"></div>
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives 人 人 人 </div>
+    </div>
+    <div id="alerts">
+        <div id="win">
+            <h1>Congratulations!</h1> You officially learned the first group of letters!
+            <br>おめでとうございます!<span><br>Would you like to play again?</span></div>
+        <div id="ready">
+            <p>Ready?</p>
+        </div>
+        <div id="gameover">
+            <p>GameOver..
+                <br> <span>Play again?</span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
